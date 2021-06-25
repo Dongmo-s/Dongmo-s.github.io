@@ -14,6 +14,40 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+
+	<style type="text/css">
+		.zhezhao{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			background: #000;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+		}
+		.tankuang{
+			position: relative;
+			background: #fff;
+			width: 50%;
+			height: 80%;
+			border-radius: 5px;
+			margin: 5% auto;
+		}
+		#header1{
+			height: 40px;
+		}
+		#header1-right{
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			border-radius: 5px;
+			background: red;
+			color: #fff;
+			right: 5px;
+			top: 5px;
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -58,11 +92,34 @@
 			<!-- One -->
 			<section id="one" class="wrapper spotlight style1">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/picture/wantdo.png" alt="avatar" /></a>
+					<a href="#" class="image"><img src="images/pic01.jpg" alt="avatar" /></a>
 					<div class="content">
 						<h2 class="major">Who am I（我是谁？）</h2>
 						<p>我叫董奥，是石家庄铁道大学信息科学与技术学院软件工程系的一名准大四学生。</p>
-						<a href="#" class="special">了解更多</a>
+						
+						<button type="button" onclick="dianwo()">点我</button>
+						<div class="zhezhao" id='zhezhao'>
+							<div class="tankuang">
+								<div id="header1">
+									<span>我是弹窗</span>
+									<div id="header1-right" onclick="hidder()">x</div>
+								</div>
+								<div>
+									ddddddddd
+								</div>
+							</div>
+						</div>
+
+						<script type="text/javascript">
+							document.getElementById('zhezhao').style.display="none";
+							function dianwo(){
+								document.getElementById('zhezhao').style.display="";
+							}
+							function hidder(){
+								document.getElementById('zhezhao').style.display="none";
+							}
+						</script>
+
 					</div>
 				</div>
 			</section>
@@ -82,7 +139,7 @@
 			<!-- Three -->
 			<section id="three" class="wrapper spotlight style3">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/picture/wantdo.png" alt="" /></a>
+					<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 					<div class="content">
 						<h2 class="major">What can I do?（我能做什么？）</h2>
 						<p>对当下的主流语言，C/C++，Java，Python等熟悉并运用, 熟悉算法与数据结构.<br>
@@ -103,7 +160,7 @@
 					<p>这是本人在大学三年做的项目简介</p>
 					<section class="features">
 						<article>
-							<a href="#" class="image"><img src="images/picture/kylin.jpeg" alt="" /></a>
+							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 							<h3 class="major">基于国产操作系统的人工智能应用</h3>
 							<p>
 								本作品是在大三下学期完成的中国软件杯第十届A10赛题，是一款基于国产操作系统(银河麒麟)的Python人工智能应用。主要实现了当下主流框架Tensorflow和Pytorch的安装使用和实时预测功能，并提供了两者框架相互转换的工具。
@@ -111,27 +168,22 @@
 							<a href="#" class="special">了解更多</a>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/picture/tupu.jpeg" alt="" /></a>
+							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
 							<h3 class="major">民航知识图谱</h3>
 							<p>一款基于Neo4j的Python应用，实现对民航分析PDF报告的语义提取并给出图谱网络。</p>
 							<br>
 							<br>
 							<br>
-							<br>
-							<br>
 							<a href="#" class="special">了解更多</a>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/picture/bigdata.jpeg" alt="" /></a>
+							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 							<h3 class="major">大数据开发管理平台</h3>
 							<p>使用大数据的主流框架Hadoop和Spark，并基于数据仓库Hbase的一款数据管理平台。</p>
-							<br>
-							<br>
-							<br>
 							<a href="#" class="special">了解更多</a>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/picture/youle.jpeg" alt="" /></a>
+							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
 							<h3 class="major">游乐园购票管理系统</h3>
 							<p>基于JavaWeb实现的经典网站案例，对游乐园进行增删改查的操作。</p>
 							<a href="#" class="special">了解更多</a>
@@ -149,12 +201,8 @@
 			<div class="inner">
 				<h2 class="major">联系作者</h2>
 				<p>
-					欢迎与我交流！
+					快来和我交流吧！
 				</p>
-				<p><strong>Github : </strong><a href="https://github.com/iceWind-R">https://github.com/iceWind-R</a></p>
-				<p><strong>博客园 : </strong><a href="https://www.cnblogs.com/dongao/">https://www.cnblogs.com/dongao/</a></p>
-				<p><strong>个人网站地址 : </strong><a href="http://www.icewind.xyz//">http://www.icewind.xyz/</a></p>
-				<p><strong>Email : </strong> thorine612@gmail.com </p>
 				
 				<ul class="copyright">
 					<li>copyright &copy; 董同学 (2021-2021)</li>
